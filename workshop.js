@@ -139,7 +139,14 @@ function uniqueElements(array1, array2) {
 }
 
 function isPalindrome(inputString) {
-
+    var cleanString = inputString.replace(/\W/g, '').toLowerCase();
+    var reverseString = cleanString.split("").reverse().join("");
+    
+    if (cleanString === reverseString) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 function wrapCharacter(inputString) {
