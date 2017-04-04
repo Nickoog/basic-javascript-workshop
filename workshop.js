@@ -7,15 +7,29 @@ function firstLetter(inputString) {
 }
 
 function lastLetter(inputString) {
+    if (inputString) {
+        return inputString[inputString.length - 1];
+    } else {
+        return undefined;
+    }
 
 }
 
 function letterAtPosition(inputString, position) {
+    if (inputString) {
+        return inputString[position];
+    } else {
+        return undefined;
+    }
 
 }
 
 function addTwoNumbers(num1, num2) {
-
+    if (typeof num1 === "number" , typeof num2 === "number") {
+        return num1 + num2;
+    } else {
+        return undefined;
+    }
 }
 
 function multiplyTwoNumbers(num1, num2) {
