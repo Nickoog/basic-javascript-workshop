@@ -69,6 +69,16 @@ function reverseString(inputString) {
 }
 
 function longestWord(inputString) {
+    var cutString = inputString.split(" ");
+    var longestOne = 0;
+    for (var i = 0; i < cutString.length; i++) {
+        if (cutString[0].length < cutString[i].length) {
+            longestOne = cutString[i];
+            break;
+        } else {
+            longestOne = cutString[0];
+        }
+    } return longestOne;
 
 }
 
