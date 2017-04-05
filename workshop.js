@@ -150,8 +150,22 @@ function isPalindrome(inputString) {
 }
 
 function wrapCharacter(inputString) {
-
+   
+    var arrString = inputString.split("");
+    
+    for (var i = 0; i < arrString.length; i++) {
+        if (i % 40 === 0 && i > 0) {
+            if (arrString[i] === ' ') {
+                arrString[i] = '\n'
+            }
+            else {
+                arrString[i] = arrString[i] + '\n'
+            }
+        } 
+    } 
+    return arrString.join("");
 }
+
 
 function wrapWord(inputString) {
 
